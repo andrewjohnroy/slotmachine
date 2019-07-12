@@ -6,10 +6,14 @@ int retNum(){
     return rand() % 10;
 }
 
-int main(){
-    srand(time(NULL));
+void spin(){
     for (int i = 0; i < 3; i++){
         printf("%d%d%d\n",retNum(),retNum(),retNum());
     }
+}
+
+int main(){
+    srand(time(NULL));
+    spin();
     return 0;
 }
